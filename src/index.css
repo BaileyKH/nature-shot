@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v21-latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v21-latin-700.woff2') format('woff2'); 
+}
+
 @layer base {
   body {
-    @apply scroll-smooth
+    @apply scroll-smooth font-poppins bg-[#0f0f0f]
+  }
+
+  .custom-shadow {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
   }
 }
