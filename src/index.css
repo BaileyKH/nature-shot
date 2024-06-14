@@ -289,7 +289,7 @@
     }
   }
 
-  /* Team Text Animation */
+  /* Team/Locations Text Animation */
   .tracking-in-contract {
     -webkit-animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
             animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
@@ -320,5 +320,15 @@
       letter-spacing: normal;
       opacity: 1;
     }
+  }
+
+  /* Gallery Location Text */
+  .offset {
+    @apply absolute -top-3 md:-top-5 xl:-top-6 2xl:-top-7 font-bold text-white text-sm md:text-2xl xl:text-4xl 2xl:text-5xl drop-shadow-md
+  }
+
+  /* Gallery Images */
+  .location-img {
+    @apply w-full col-span-1 row-span-1 rounded-md h-full brightness-75
   }
 }

@@ -9,7 +9,7 @@ export const Nav = () => {
                     <Link to="/" className="text-white/90 text-sm md:text-base">Nature Shot</Link>
                 </div>
                 <div className="flex space-x-3">
-                    <Link className="nav-links border-x border-white/50 px-3">Gallery</Link>
+                    <Link to="/gallery" className="nav-links border-x border-white/50 px-3">Gallery</Link>
                     <Link className="nav-links">Contact</Link>
                 </div>
             </div>

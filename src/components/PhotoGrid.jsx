@@ -37,7 +37,7 @@ export const PhotoGrid = () => {
                 className={`relative ${photo.span}`}
                 onClick={() => openModal(photo.src)}
                 >
-                <img src={photo.src} width="2000px" alt={`Photo ${index + 1}`} className="w-full h-full object-cover cursor-pointer" decoding="async" loading="lazy"/>
+                <img src={photo.src} width="2000px" alt={`Photo ${index + 1}`} className="w-full h-full rounded-md object-cover cursor-pointer" decoding="async" loading="lazy"/>
                 </div>
             ))}
             </div>
