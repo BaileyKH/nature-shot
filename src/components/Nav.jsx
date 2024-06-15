@@ -10,7 +10,7 @@ export const Nav = () => {
                 </div>
                 <div className="flex space-x-3">
                     <Link to="/gallery" className="nav-links border-x border-white/50 px-3">Gallery</Link>
-                    <Link className="nav-links">Contact</Link>
+                    <Link to="/contact" className="nav-links">Contact</Link>
                 </div>
             </div>
         </nav>

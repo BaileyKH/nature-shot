@@ -41,6 +41,8 @@ export const Locations = () => {
                     <Link to="us">
                         <img
                             src={us}
+                            width="604px"
+                            height="432px"
                             className="location-img"
                             alt="Scenic view of zion national park at sunset"
                             decoding="async"
@@ -53,6 +55,8 @@ export const Locations = () => {
                     <Link to="finland">
                         <img
                             src={finland}
+                            width="604px"
+                            height="432px"
                             className="location-img"
                             alt="An open snowy field in finland with a cabin in the far distance"
                             decoding="async"
@@ -65,6 +69,8 @@ export const Locations = () => {
                     <Link to="nz">
                         <img
                             src={nz}
+                            width="604px"
+                            height="432px"
                             className="location-img"
                             alt="A valley within snowy topped mountains in New Zealand"
                             decoding="async"
@@ -77,6 +83,8 @@ export const Locations = () => {
                     <Link to="japan">
                         <img
                             src={japan}
+                            width="604px"
+                            height="432px"
                             className="location-img"
                             alt="Misty/foggy hillside located in Japan"
                             decoding="async"

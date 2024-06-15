@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 
 export const ImageModal = ({ src, isOpen, onClose }) => {
 

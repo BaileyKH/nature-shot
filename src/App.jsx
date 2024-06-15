@@ -8,6 +8,7 @@ import { Locations } from './components/Locations';
 import { Finland } from './pages/locations/Finland';
 import { NewZealand } from './pages/locations/NewZealand';
 import { Japan } from './pages/locations/Japan';
+import { Contact } from './pages/Contact';
 
 const MemoizedLayout = memo(Layout)
 
@@ -26,6 +27,7 @@ function App() {
               <Route path="nz" element={<NewZealand />}/>
               <Route path="japan" element={<Japan />}/>
             </Route>
+            <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
       </Router>
