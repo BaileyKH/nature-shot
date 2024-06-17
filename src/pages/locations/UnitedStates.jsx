@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 
+import { useModal } from "../../App";
+
 import { usPhotos } from "/src/pages/locations/USPhotoData.js";
 
 export const UnitedStates = () => {
+    
+    const { openModal } = useModal();
 
     // Scrolls to top of div 'location' on transition between pages
     useEffect(()=>{
@@ -19,8 +23,8 @@ export const UnitedStates = () => {
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-auto gap-5 p-4 mt-3 md:mt-6">
                 {usPhotos.map((photo, index) => (
-                    <div id={index} key={index} className="col-span-1 row-span-1">
-                        <img src={photo} width="295px" height="197px" className="rounded-md w-full"/>
+                    <div id={index} key={index} onClick={() => openModal(photo)} className="col-span-1 row-span-1">
+                        <img src={photo} width="295px" height="197px" className="rounded-md w-full cursor-pointer"/>
                     </div>
                 ))}
             </div>

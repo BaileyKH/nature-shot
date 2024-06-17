@@ -1,3 +1,5 @@
+import React, { createContext, useContext, useState } from 'react';
+
 import { memo } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
@@ -9,13 +11,34 @@ import { Finland } from './pages/locations/Finland';
 import { NewZealand } from './pages/locations/NewZealand';
 import { Japan } from './pages/locations/Japan';
 import { Contact } from './pages/Contact';
+import { ImageModal } from '/src/components/ImageModal.jsx'
+
+
+const ModalContext = createContext();
+
+export const useModal = () => {
+    return useContext(ModalContext);
+};
 
 const MemoizedLayout = memo(Layout)
 
 function App() {
 
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const openModal = (src) => {
+      setSelectedImage(src);
+      setModalOpen(true);
+  };
+
+  const closeModal = () => {
+      setSelectedImage(null);
+      setModalOpen(false);
+  };
+
   return (
-    <>
+    <ModalContext.Provider value={{ selectedImage, modalOpen, openModal, closeModal }}>
       <Router>
         <Routes>
           <Route path="/" element={<MemoizedLayout />} >
@@ -30,8 +53,9 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Route>
         </Routes>
+        <ImageModal />
       </Router>
-    </>
+    </ModalContext.Provider>
   )
 }
 
