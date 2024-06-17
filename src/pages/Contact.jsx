@@ -36,8 +36,8 @@ export const Contact = () => {
     }
 
     return (
-        <div className="bg-[url('/src/assets/images/contact.webp')] bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center">
-            <div className="relative mt-16 md:mt-14 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
+        <div className="bg-[url('/src/assets/images/contact.webp')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center">
+            <div className="relative my-16 md:my-14 lg:my-20 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
                 <form
                     id="contact-form"
                     onSubmit={handleSubmit}
@@ -146,7 +146,7 @@ export const Contact = () => {
                                                 onClick={() =>
                                                     setNewCountry(true)
                                                 }
-                                                className="text-sky-600 cursor-pointer hover:underline"
+                                                className="text-sky-600 cursor-pointer underline underline-offset-2"
                                             >
                                                 country
                                             </span>
@@ -217,8 +217,8 @@ export const Contact = () => {
                 </div>
             ) : null}
             {newCountry ? (
-                <div className="absolute flex flex-col justify-center items-center w-full h-screen bg-black/60">
-                    <div className="flex flex-col items-center bg-black/60 backdrop-blur-lg w-[300px] px-3 py-4 h-max rounded-lg border border-white/60">
+                <div className="absolute flex flex-col justify-center items-center w-full min-h-screen bg-black/60">
+                    <div className="flex flex-col items-center bg-black/25 backdrop-blur-lg w-[300px] px-3 py-4 h-max rounded-lg border border-white/60">
                         <p className="text-sky-600 text-lg">We'll Get There!</p>
                         <p className="text-white/90 text-sm text-center mt-2 leading-6">
                             Don't see your country? We just haven't made it
