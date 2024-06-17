@@ -37,13 +37,13 @@ export const Contact = () => {
 
     return (
         <div className="bg-[url('/src/assets/images/contact.webp')] bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center">
-            <div className="relative mt-14 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
+            <div className="relative mt-16 md:mt-14 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
                 <form
                     id="contact-form"
                     onSubmit={handleSubmit}
-                    className="py-6 px-6 md:px-24"
+                    className="py-2 px-6 md:px-16 md:py-4"
                 >
-                    <div className="space-y-12">
+                    <div className="space-y-6 md:space-y-12">
                         <div>
                             <h2 className="text-base font-semibold leading-7 tracking-wider text-white/90">
                                 Personal Information
@@ -52,7 +52,7 @@ export const Contact = () => {
                                 Please fill out the following form.
                             </p>
 
-                            <div className="mt-4 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                            <div className="mt-4 grid grid-cols-1 gap-x-6 gap-y-4 md:gap-y-8 sm:grid-cols-6">
                                 <div className="sm:col-span-3">
                                     <label
                                         htmlFor="first-name"
