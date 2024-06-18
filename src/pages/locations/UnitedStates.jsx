@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { useModal } from "../../App";
 
-import { usPhotos } from "/src/pages/locations/USPhotoData.js";
+import { usPhotos } from "/src/pages/locations/LocationPhotoData.js";
 
 export const UnitedStates = () => {
     
@@ -24,7 +24,7 @@ export const UnitedStates = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-auto gap-5 p-4 mt-3 md:mt-6">
                 {usPhotos.map((photo, index) => (
                     <div id={index} key={index} onClick={() => openModal(photo)} className="col-span-1 row-span-1">
-                        <img src={photo} width="295px" height="197px" className="rounded-md w-full cursor-pointer"/>
+                        <img src={photo} width="295px" height="197px" className="rounded-md w-full cursor-pointer" decoding="async" loading="lazy"/>
                     </div>
                 ))}
             </div>

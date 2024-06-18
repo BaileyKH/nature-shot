@@ -52,7 +52,7 @@ export const Home = () => {
                         <h3 className="font-bold text-white/90 text-2xl md:text-3xl 2xl:text-5xl">Who is <span className="text-sky-600">Nature Shot</span> ?</h3>
                         <p className="text-white/90 text-sm md:text-base 2xl:text-2xl leading-7 md:leading-9 lg:leading-9 2xl:leading-10 tracking-wider">At Nature Shot, our team of passionate photographers travels the globe, dedicated to capturing the breathtaking beauty of the natural world. From majestic mountains to serene seascapes, our mission is to showcase the wonders of Mother Nature through stunning imagery. Join us as we explore and document the awe-inspiring landscapes that make our planet extraordinary.</p>
                         <div className="w-48 md:w-64">
-                            <Link className="rounded-md w-full flex px-3.5 py-4 sm:text-sm md:text-lg 2xl:text-2xl overflow-hidden relative group cursor-pointer border-2 border-sky-600 font-medium">
+                            <Link to="/gallery" className="rounded-md w-full flex px-3.5 py-4 sm:text-sm md:text-lg 2xl:text-2xl overflow-hidden relative group cursor-pointer border-2 border-sky-600 font-medium">
                                 <span className="absolute w-64 h-0 transition-all duration-300 origin-center rotate-45 translate-x-20 bg-sky-600 top-1/2 group-hover:h-64 group-hover:-translate-y-5 ease"></span>
                                 <span className="relative ml-1 text-white/90 transition duration-300 ease">
                                     Explore Gallery
