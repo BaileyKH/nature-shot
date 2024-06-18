@@ -2,11 +2,16 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Contact = () => {
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [email, setEmail] = useState("");
-    const [country, setCountry] = useState("");
-    const [about, setAbout] = useState("");
+
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        email: "",
+        country: "",
+        about: ""
+    });
+
+    const [errors, setErrors] = useState({});
 
     const [newCountry, setNewCountry] = useState(false);
     const [submit, setSubmit] = useState(false);
@@ -14,14 +19,57 @@ export const Contact = () => {
     const navigate = useNavigate();
     const to = location.state?.to || "/";
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        setFirstName(e.target.firstName.value);
-        setLastName(e.target.lastName.value);
-        setEmail(e.target.email.value);
-        setCountry(e.target.country.value);
-        setAbout(e.target.about.value);
-        setSubmit(true);
+    const isValidEmail = (email) => {
+        const validEmail = /^\S+@\S+\.\S+$/;
+        return validEmail.test(email);
+    }
+
+    const validateForm = () => {
+
+        let newErrors = {};
+
+        if (!formData.firstName) {
+            newErrors.firstName = "Please enter your first name."
+        }
+        if (!formData.lastName) {
+            newErrors.lastName = "Please enter your last name."
+        }
+        if (!formData.email) {
+            newErrors.email = "Please enter an email address"
+        } else if (!isValidEmail(formData.email)) {
+            newErrors.email = "Invalid email format"
+        }
+        if (!formData.country) {
+            newErrors.country = "Please choose a country. If you do not see your country, please select N/A"
+        }
+        if (!formData.about) {
+            newErrors.about = "Please enter a short description about the location"
+        }
+
+        setErrors(newErrors)
+
+        return Object.keys(newErrors).length === 0;
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const isValid = validateForm();
+        if (isValid) {
+            console.log("Form Submitted", formData)
+            setSubmit(true);
+        } else {
+            console.log("Form Validation Failed")           
+        }
+    }
+
+    const handleChange = (e) => {
+        const {name, value} = e.target
+
+        setFormData({
+            ...formData,
+            [name]: value,
+        })
     }
 
     function handleCancel() {
@@ -65,10 +113,12 @@ export const Contact = () => {
                                             type="text"
                                             name="firstName"
                                             id="first-name"
+                                            value={formData.firstName}
+                                            onChange={handleChange}
                                             autoComplete="given-name"
-                                            className="block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ring-white/60 bg-white/10 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
-                                            required
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.firstName ? `ring-red-400` : `ring-white/60`} bg-white/10 focus:ring-2 focus:ring-inset ${errors.firstName ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
                                         />
+                                        {errors.firstName && <p className="text-red-400 text-sm mt-1">{errors.firstName}</p>}
                                     </div>
                                 </div>
 
@@ -84,10 +134,12 @@ export const Contact = () => {
                                             type="text"
                                             name="lastName"
                                             id="last-name"
+                                            value={formData.lastName}
+                                            onChange={handleChange}
                                             autoComplete="family-name"
-                                            className="block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ring-white/60 bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
-                                            required
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.lastName ? `ring-red-400` : `ring-white/60`} bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset ${errors.lastName ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
                                         />
+                                        {errors.lastName && <p className="text-red-400 text-sm mt-1">{errors.lastName}</p>}
                                     </div>
                                 </div>
 
@@ -103,11 +155,13 @@ export const Contact = () => {
                                             id="email"
                                             name="email"
                                             type="email"
+                                            value={formData.email}
+                                            onChange={handleChange}
                                             autoComplete="email"
                                             placeholder="your@email"
-                                            className="block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ring-white/60 bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
-                                            required
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.email ? `ring-red-400` : `ring-white/60`} bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset ${errors.email ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
                                         />
+                                        {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
                                     </div>
                                 </div>
                             </div>
@@ -131,15 +185,18 @@ export const Contact = () => {
                                         <select
                                             id="country"
                                             name="country"
+                                            value={formData.country}
+                                            onChange={handleChange}
                                             autoComplete="country-name"
-                                            className="block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ring-white/60 bg-white/10 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.country ? `ring-red-400` : `ring-white/60`} bg-white/10 focus:ring-2 focus:ring-inset ${errors.country ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:max-w-xs sm:text-sm sm:leading-6`}
                                         >
-                                            <option selected>-select country-</option>
+                                            <option>-select country-</option>
                                             <option>United States</option>
                                             <option>Finland</option>
                                             <option>New Zealand</option>
                                             <option>Japan</option>
                                         </select>
+                                        {errors.country && <p className="text-red-400 text-sm mt-1">{errors.country}</p>}
                                         <p className="text-white/60 text-sm mt-3">
                                             Don't see your{" "}
                                             <span
@@ -165,11 +222,12 @@ export const Contact = () => {
                                         <textarea
                                             id="about"
                                             name="about"
+                                            value={formData.about}
+                                            onChange={handleChange}
                                             rows={3}
-                                            className="block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ring-white/60 bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
-                                            required
-                                            defaultValue={""}
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.country ? `ring-red-400` : `ring-white/60`} bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset ${errors.country ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
                                         />
+                                        {errors.country && <p className="text-red-400 text-sm mt-1">{errors.country}</p>}
                                     </div>
                                     <p className="mt-3 text-sm leading-6 text-white/60">
                                         Write a few sentences about the desired
@@ -201,7 +259,7 @@ export const Contact = () => {
                 <div className="absolute flex flex-col justify-center items-center w-full h-screen bg-black/60">
                     <div className="flex flex-col items-center bg-black/60 backdrop-blur-lg w-[300px] px-2 py-4 h-max rounded-lg border border-white/60">
                         <p className="text-sky-600 text-lg">
-                            Thank You {firstName}
+                            Thank You {formData.firstName}
                         </p>
                         <p className="text-white/90 text-sm text-center mt-2">
                             We appreciate you considering our team for your next
