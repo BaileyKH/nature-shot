@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export const Contact = () => {
+
+    // Scrolls to top of page on transition between pages
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
 
     const [formData, setFormData] = useState({
         firstName: "",
