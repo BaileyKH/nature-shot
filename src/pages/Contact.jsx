@@ -230,9 +230,9 @@ export const Contact = () => {
                                             value={formData.about}
                                             onChange={handleChange}
                                             rows={3}
-                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.country ? `ring-red-400` : `ring-white/60`} bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset ${errors.country ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
+                                            className={`block w-full rounded-md border-0 py-1.5 text-white/90 shadow-sm ring-1 ring-inset ${errors.about ? `ring-red-400` : `ring-white/60`} bg-white/10 placeholder:text-gray-400 focus:ring-2 focus:ring-inset ${errors.about ? 'focus:ring-red-400' : 'focus:ring-sky-600'} sm:text-sm sm:leading-6`}
                                         />
-                                        {errors.country && <p className="text-red-400 text-sm mt-1">{errors.country}</p>}
+                                        {errors.about && <p className="text-red-400 text-sm mt-1">{errors.about}</p>}
                                     </div>
                                     <p className="mt-3 text-sm leading-6 text-white/60">
                                         Write a few sentences about the desired
