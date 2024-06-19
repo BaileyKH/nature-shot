@@ -14,7 +14,7 @@ export const Photographers = () => {
 
     return(
         <div className="min-h-screen flex flex-col justify-center">
-            <img src={bg} className="relative object-cover object-center h-screen brightness-50"/>
+            <img src={bg} width="1261px" height="841px" className="relative object-cover object-center h-screen brightness-50"/>
             <div className="absolute flex flex-col items-center w-full px-8 md:px-10">
                 <div className="mb-8 w-[350px] text-center backdrop-blur-lg border border-white/50 p-2 md:p-4 rounded-md shadow-lg">
                     <h1 className="text-white/90 drop-shadow-lg text-2xl md:text-4xl font-bold tracking-wide mb-2 md:mb-4 underline underline-offset-4">Photographers</h1>
