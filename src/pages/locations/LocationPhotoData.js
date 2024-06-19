@@ -68,72 +68,72 @@ import lauttasaari from '/src/assets/finland-photos/lauttasaari.webp'
 import rovaniemi from '/src/assets/finland-photos/rovaniemi.webp'
 import saana from '/src/assets/finland-photos/saana.webp'
 import seurasaari from '/src/assets/finland-photos/seurasaari.webp'
-import uutela from '/src/assets/finland-photos/uutela.webp'
+import  lake from '/src/assets/finland-photos/lake.webp'
 
 export const finlandPhotos = [
     {
         img: aanekoski,
-        alt: ""
+        alt: "Aanekosky, Finland"
     },
     {
         img: helsinki,
-        alt: "",
+        alt: "Helsinki, Finland",
     },
     {
         img: helsinkiTwo,
-        alt: "",
+        alt: "Helsinki, Finland",
     },
     {
         img: helsinkiThree,
-        alt: ""
+        alt: "Helsinki, Finland"
     },
     {
         img: janiskoski,
-        alt: "",
+        alt: "Janiskoski Rapids, Finland",
     },
     {
         img: kittila,
-        alt: ""
+        alt: "Kittila, Finland"
     },
     {
         img: korsholm,
-        alt: ""
+        alt: "Korsholm, Finland"
     },
     {
         img: laplandWild,
-        alt: ""
+        alt: "Lapland, Finland"
     },
     {
         img: lapland,
-        alt: ""
+        alt: "Lapland, Finland"
     },
     {
         img: laplandTwo,
-        alt: ""
+        alt: "Lapland, Finland"
     },
     {
         img: laplandThree,
-        alt: ""
+        alt: "Lapland, Finland"
     },
     {
         img: lauttasaari,
-        alt: ""
+        alt: "Lauttasaari, Finland"
     },
     {
         img: rovaniemi,
-        alt: ""
+        alt: "Rovaniemi, Finland"
     },
     {
         img: saana,
-        alt: ""
+        alt: "Saana, Finland"
     },
     {
         img: seurasaari,
-        alt: ""
+        alt: "Seurasaari, Finland"
     },
     {
-        img: uutela,
-        alt: ""
+        img: lake,
+        alt: "A dock overlooking a beautiful lake in Finland"
     }
 ]
 
