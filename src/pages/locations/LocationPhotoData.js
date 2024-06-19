@@ -52,6 +52,91 @@ import trebleCone from '/src/assets/NewZealand-photos/treble-cone.webp'
 import westCoast from '/src/assets/NewZealand-photos/west-coast.webp'
 import mntCreighton from '/src/assets/NewZealand-photos/mount-creighton.webp'
 
+// Finland Photos
+import aanekoski from '/src/assets/finland-photos/aanekoski.webp'
+import helsinki from '/src/assets/finland-photos/helsinki.webp'
+import helsinkiTwo from '/src/assets/finland-photos/helsinki-2.webp'
+import helsinkiThree from '/src/assets/finland-photos/helsinki-3.webp'
+import janiskoski from '/src/assets/finland-photos/janiskoski-rapids.webp'
+import kittila from '/src/assets/finland-photos/kittila.webp'
+import korsholm from '/src/assets/finland-photos/korsholm.webp'
+import laplandWild from '/src/assets/finland-photos/lapland-wilderness.webp'
+import lapland from '/src/assets/finland-photos/lapland.webp'
+import laplandTwo from '/src/assets/finland-photos/lapland-2.webp'
+import laplandThree from '/src/assets/finland-photos/lapland-3.webp'
+import lauttasaari from '/src/assets/finland-photos/lauttasaari.webp'
+import rovaniemi from '/src/assets/finland-photos/rovaniemi.webp'
+import saana from '/src/assets/finland-photos/saana.webp'
+import seurasaari from '/src/assets/finland-photos/seurasaari.webp'
+import uutela from '/src/assets/finland-photos/uutela.webp'
+
+export const finlandPhotos = [
+    {
+        img: aanekoski,
+        alt: ""
+    },
+    {
+        img: helsinki,
+        alt: "",
+    },
+    {
+        img: helsinkiTwo,
+        alt: "",
+    },
+    {
+        img: helsinkiThree,
+        alt: ""
+    },
+    {
+        img: janiskoski,
+        alt: "",
+    },
+    {
+        img: kittila,
+        alt: ""
+    },
+    {
+        img: korsholm,
+        alt: ""
+    },
+    {
+        img: laplandWild,
+        alt: ""
+    },
+    {
+        img: lapland,
+        alt: ""
+    },
+    {
+        img: laplandTwo,
+        alt: ""
+    },
+    {
+        img: laplandThree,
+        alt: ""
+    },
+    {
+        img: lauttasaari,
+        alt: ""
+    },
+    {
+        img: rovaniemi,
+        alt: ""
+    },
+    {
+        img: saana,
+        alt: ""
+    },
+    {
+        img: seurasaari,
+        alt: ""
+    },
+    {
+        img: uutela,
+        alt: ""
+    }
+]
+
 export const usPhotos = [
     mtRainier1,
     lowerAnt,
