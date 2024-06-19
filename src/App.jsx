@@ -12,6 +12,7 @@ import { NewZealand } from './pages/locations/NewZealand';
 import { Japan } from './pages/locations/Japan';
 import { Contact } from './pages/Contact';
 import { ImageModal } from '/src/components/ImageModal.jsx'
+import { Photographers } from './pages/Photographers';
 
 
 const ModalContext = createContext();
@@ -51,6 +52,7 @@ function App() {
               <Route path="japan" element={<Japan />}/>
             </Route>
             <Route path="/contact" element={<Contact />} />
+            <Route path="/photographers" element={<Photographers />} />
           </Route>
         </Routes>
         <ImageModal />

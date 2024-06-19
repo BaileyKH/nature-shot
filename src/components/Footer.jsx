@@ -9,7 +9,7 @@ export const Footer = () => {
     return(
         <footer className="bg-zinc-900 flex flex-col h-max items-center py-10 md:py-16 space-y-14">
             <div className="flex justify-center items-center space-x-12 md:space-x-24 text-base md:text-lg text-white/90">
-                <Link className="hover:text-sky-600">Photographers</Link>
+                <Link to="/photographers" className="hover:text-sky-600">Photographers</Link>
                 <Link to="/gallery" className="hover:text-sky-600">Gallery</Link>
                 <Link to="/contact" className="hover:text-sky-600">Contact</Link>
             </div>

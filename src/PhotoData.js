@@ -1,3 +1,5 @@
+
+// Home Page photos
 import glacier from '/src/assets/grid-photos/glacier-stream.webp'
 import snwyMtn from '/src/assets/grid-photos/snowy-mtn-top.webp'
 import mtnView from '/src/assets/grid-photos/mtn-view.webp'
@@ -42,4 +44,85 @@ export const photos = [
         alt: "Large snow topped mountain",
         span: 'sm:col-span-2 row-span-2'
     }, 
+]
+
+// Names of each photographer who's photo is present in the app
+export const photographers1 = [
+    "Marek Piwnicky",
+    "Koushik Chowdavarapu",
+    "Christian Wiebel",
+    "Cristofer Maximillion",
+    "Nick Da Fonseca",
+    "Peter Thomas",
+    "Quino Al",
+    "Ricardo Teixeira",
+    "Luca Bravo",
+    "Luca Verc",
+    "Jeremy Kieran",
+    "Varun Yadav",
+    "Archee Lal",
+    "Federico Bottos",
+    "Caleb Riston",
+    "Ameer Basheer",
+    "Trent Erwin",
+    "Daniel Olah",
+    "Peter Lloyd",
+    "Shakti Rajpurohit",
+    "Joseph Corl",
+    "Joshua Sukoff",
+    "Tyler Casey",
+    "Girma Nigusse",
+    "Dave Hoefler",
+    "Olga Subach",
+    "Andrew Ruiz",
+    "Jason Thompson",
+    "Levi Bare",
+    "Jonatan Pie",
+    "Sora Sagano",
+    "Jeremy Manoto",
+    "Atul Vinayak",
+    "Nic Y-C",
+    "C. SHII",
+    "Hendrik Morkel",
+    "Vivian K"
+]
+
+export const photographers2 = [
+    "Mattieu Buhler",
+    "Samuel Berner",
+    "Aditya Anjagi",
+    "Ice Tea",
+    "Ryoji Iwata",
+    "Alejandro Barba",
+    "Mike Kilcoyne",
+    "Mariola Grobelska",
+    "Jim Zenn",
+    "Tom Vining",
+    "Tobias Keller",
+    "Match Sumaya",
+    "Casey Horner",
+    "Rashel Ochoa",
+    "ThatPhotoGuyNL",
+    "Jingwei Ke",
+    "Geoff Byron",
+    "Tom King",
+    "Andre Bernhardt",
+    "Tim Marshall",
+    "Tyler Lastovich",
+    "Karl Anderson",
+    "Bulb Creative",
+    "Jacle Stephens",
+    "Tim Marshall",
+    "Chaozzy Lin",
+    "Felix Lindvik",
+    "Vincent Guth",
+    "Marko Hankkila",
+    "Joakim Honkasalo",
+    "Marc Linnemann",
+    "Mayur Aruind",
+    "Saad Chaudhry",
+    "Niko Nieminen",
+    "Carlos Santos",
+    "Tania Malrechauffe",
+    "Ales Krivec"
 ]
