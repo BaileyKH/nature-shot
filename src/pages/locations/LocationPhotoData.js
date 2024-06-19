@@ -1,20 +1,20 @@
 // US Photos
-import mtRainier1 from '/src/assets/us-photos/mt-rainier-1.jpg'
-import lowerAnt from '/src/assets/us-photos/lover-antelope.jpg'
-import rockyMtn from '/src/assets/us-photos/rocky-mtn.jpg'
-import yosemite from '/src/assets/us-photos/yosemite.jpg'
-import zion from '/src/assets/us-photos/zion.jpg'
-import olympic from '/src/assets/us-photos/olympic.jpg'
-import hurricane from '/src/assets/us-photos/hurricane.jpg'
-import whiteSnds from '/src/assets/us-photos/white-sands.jpg'
-import bigSur1 from '/src/assets/us-photos/big-sur-1.jpg'
-import oakHrbr from '/src/assets/us-photos/oak-harbor.jpg'
-import hyak from '/src/assets/us-photos/hyak.jpg'
-import bandon from '/src/assets/us-photos/bandon.jpg'
-import bigSur2 from '/src/assets/us-photos/big-sur-2.jpg'
-import mtRainier2 from '/src/assets/us-photos/mnt-rainier-2.jpg'
-import bryceCnyn from '/src/assets/us-photos/bryce-canyon.jpg'
-import glacierPnt from '/src/assets/us-photos/glacier-point.jpg'
+import aspen from '/src/assets/us-photos/aspen.webp'
+import bandon from '/src/assets/us-photos/bandon.webp'
+import bigSur from '/src/assets/us-photos/big-sur-1.webp'
+import bigSurTwo from '/src/assets/us-photos/big-sur-2.webp'
+import bryceCanyon from '/src/assets/us-photos/bryce-canyon.webp'
+import glacierPoint from '/src/assets/us-photos/glacier-point.webp'
+import hurricaneRidge from '/src/assets/us-photos/hurricane-ridge.webp'
+import hyak from '/src/assets/us-photos/hyak.webp'
+import lowerAnt from '/src/assets/us-photos/lower-antelope.webp'
+import mtRainier from '/src/assets/us-photos/mt-rainier-1.webp'
+import mtRainierTwo from '/src/assets/us-photos/mt-rainier-2.webp'
+import oakHarbor from '/src/assets/us-photos/oak-harbor.webp'
+import olympic from '/src/assets/us-photos/olympic-park.webp'
+import whiteSands from '/src/assets/us-photos/white-sands.webp'
+import yosemite from '/src/assets/us-photos/yosemite.webp'
+import zion from '/src/assets/us-photos/zion.webp'
 
 // Japan Photos
 import arashiDeck from '/src/assets/japan-photos/arashiyama-obs-deck.webp'
@@ -70,90 +70,72 @@ import saana from '/src/assets/finland-photos/saana.webp'
 import seurasaari from '/src/assets/finland-photos/seurasaari.webp'
 import  lake from '/src/assets/finland-photos/lake.webp'
 
-export const finlandPhotos = [
-    {
-        img: aanekoski,
-        alt: "Aanekosky, Finland"
-    },
-    {
-        img: helsinki,
-        alt: "Helsinki, Finland",
-    },
-    {
-        img: helsinkiTwo,
-        alt: "Helsinki, Finland",
-    },
-    {
-        img: helsinkiThree,
-        alt: "Helsinki, Finland"
-    },
-    {
-        img: janiskoski,
-        alt: "Janiskoski Rapids, Finland",
-    },
-    {
-        img: kittila,
-        alt: "Kittila, Finland"
-    },
-    {
-        img: korsholm,
-        alt: "Korsholm, Finland"
-    },
-    {
-        img: laplandWild,
-        alt: "Lapland, Finland"
-    },
-    {
-        img: lapland,
-        alt: "Lapland, Finland"
-    },
-    {
-        img: laplandTwo,
-        alt: "Lapland, Finland"
-    },
-    {
-        img: laplandThree,
-        alt: "Lapland, Finland"
-    },
-    {
-        img: lauttasaari,
-        alt: "Lauttasaari, Finland"
-    },
-    {
-        img: rovaniemi,
-        alt: "Rovaniemi, Finland"
-    },
-    {
-        img: saana,
-        alt: "Saana, Finland"
-    },
-    {
-        img: seurasaari,
-        alt: "Seurasaari, Finland"
-    },
-    {
-        img: lake,
-        alt: "A dock overlooking a beautiful lake in Finland"
-    }
-]
 
 export const usPhotos = [
-    mtRainier1,
-    lowerAnt,
-    rockyMtn,
-    yosemite,
-    zion,
-    olympic,
-    hurricane,
-    whiteSnds,
-    bigSur1,
-    oakHrbr,
-    hyak,
-    bandon,
-    bigSur2,
-    mtRainier2,
-    bryceCnyn,
-    glacierPnt
+    {
+        img: aspen,
+        alt: "Aspen, United States"
+    },
+    {
+        img: bandon,
+        alt: "Bandon, United States"
+    },
+    {
+        img: bigSur,
+        alt: "Big Sur, United States"
+    },
+    {
+        img: bigSurTwo,
+        alt: "Big Sur, United States"
+    },
+    {
+        img: bryceCanyon,
+        alt: "Bryce Canyon, United States"
+    },
+    {
+        img: glacierPoint,
+        alt: "Glacier Point, United States"
+    },
+    {
+        img: hurricaneRidge,
+        alt: "Hurricane Ridge, United States"
+    },
+    {
+        img: hyak,
+        alt: "Hyak, United States"
+    },
+    {
+        img: lowerAnt,
+        alt: "Lower Antelope Canyon, United States"
+    },
+    {
+        img: mtRainier,
+        alt: "Mount Rainier, United States"
+    },
+    {
+        img: mtRainierTwo,
+        alt: "Mount Rainier, United States"
+    },
+    {
+        img: oakHarbor,
+        alt: "Oak Harbor, United States"
+    },
+    {
+        img: olympic,
+        alt: "Olympic National Park, United States"
+    },
+    {
+        img: whiteSands,
+        alt: "White Sandes, United States"
+    },
+    {
+        img: yosemite,
+        alt: "Yosemite National Park, United States"
+    },
+    {
+        img: zion,
+        alt: "Zion National Park, United States"
+    },
 ]
 
 export const japanPhotos = [
@@ -287,5 +269,72 @@ export const nzPhotos = [
     {
         img: mntCreighton,
         alt: "Mount Creighton, New Zealand"
+    }
+]
+
+export const finlandPhotos = [
+    {
+        img: aanekoski,
+        alt: "Aanekosky, Finland"
+    },
+    {
+        img: helsinki,
+        alt: "Helsinki, Finland",
+    },
+    {
+        img: helsinkiTwo,
+        alt: "Helsinki, Finland",
+    },
+    {
+        img: helsinkiThree,
+        alt: "Helsinki, Finland"
+    },
+    {
+        img: janiskoski,
+        alt: "Janiskoski Rapids, Finland",
+    },
+    {
+        img: kittila,
+        alt: "Kittila, Finland"
+    },
+    {
+        img: korsholm,
+        alt: "Korsholm, Finland"
+    },
+    {
+        img: laplandWild,
+        alt: "Lapland, Finland"
+    },
+    {
+        img: lapland,
+        alt: "Lapland, Finland"
+    },
+    {
+        img: laplandTwo,
+        alt: "Lapland, Finland"
+    },
+    {
+        img: laplandThree,
+        alt: "Lapland, Finland"
+    },
+    {
+        img: lauttasaari,
+        alt: "Lauttasaari, Finland"
+    },
+    {
+        img: rovaniemi,
+        alt: "Rovaniemi, Finland"
+    },
+    {
+        img: saana,
+        alt: "Saana, Finland"
+    },
+    {
+        img: seurasaari,
+        alt: "Seurasaari, Finland"
+    },
+    {
+        img: lake,
+        alt: "A dock overlooking a beautiful lake in Finland"
     }
 ]
