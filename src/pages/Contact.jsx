@@ -90,7 +90,7 @@ export const Contact = () => {
 
     return (
         <div className="bg-[url('/src/assets/images/contact.webp')] bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center">
-            <div className="relative my-16 md:my-14 lg:my-20 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
+            <section className="relative my-16 md:my-14 lg:my-20 mx-4 backdrop-blur-lg w-[800px] h-max rounded-lg border border-white/60">
                 <form
                     id="contact-form"
                     onSubmit={handleSubmit}
@@ -259,7 +259,7 @@ export const Contact = () => {
                         </button>
                     </div>
                 </form>
-            </div>
+            </section>
             {submit ? (
                 <div className="absolute flex flex-col justify-center items-center w-full h-screen bg-black/60">
                     <div className="flex flex-col items-center bg-black/60 backdrop-blur-lg w-[300px] px-2 py-4 h-max rounded-lg border border-white/60">

@@ -5,7 +5,7 @@ import galleryHero from '/src/assets/images/gallery-hero.webp'
 export const Gallery = () => {
 
     return(
-        <div>
+        <section>
             <div className="w-full h-full overflow-hidden custom-shadow rounded-b-3xl">
                 <div className="flex items-center justify-center">
                     <img src={galleryHero} width="1261px" height="710" className="brightness-75 rounded-b-3xl w-full" decoding="async"/>
@@ -15,6 +15,6 @@ export const Gallery = () => {
                 </div>
             </div>
             <Outlet />
-        </div>
+        </section>
     );
 }

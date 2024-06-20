@@ -31,19 +31,19 @@ export const Home = () => {
   });
 
     return(
-        <div>
-            <div className="w-full h-full overflow-hidden custom-shadow rounded-b-3xl">
+        <main>
+            <section className="w-full h-full overflow-hidden custom-shadow rounded-b-3xl">
                 <div className="flex items-center justify-center">
-                    <img src={homeHero} width="1261px" height="710" className="brightness-75 rounded-b-3xl w-full" decoding="async"/>
+                    <img src={homeHero} width="1261px" height="710" alt="gloomy snow capped mountain top with a beautiful bird coming right into view" className="brightness-75 rounded-b-3xl w-full" decoding="async"/>
                     <div className="absolute z-10">
                         <h1 className="font-bold text-6xl md:text-9xl text-white text-flicker-in-glow">NS</h1>
                     </div>
                 </div>
-            </div>
-            <div ref={parentRef} className="bg-zinc-900 mt-12 md:mt-24 w-full">
+            </section>
+            <section ref={parentRef} className="bg-zinc-900 mt-12 md:mt-24 w-full">
                 <div className="relative flex flex-col lg:flex-row p-8">
                     <div className="w-full lg:w-1/2 flex flex-grow">
-                        <img src={groupPhoto} width="599px" height="393px" className="w-[700px] 2xl:w-[1400px] rounded-md shadow-lg" decoding="async" loading="lazy"/>
+                        <img src={groupPhoto} width="599px" height="393px" alt="a group of hikers relaxing near a cliffs edge" className="w-[700px] 2xl:w-[1400px] rounded-md shadow-lg" decoding="async" loading="lazy"/>
                     </div>
                     <div ref={textRef}>
                         <h2 className="absolute font-bold text-4xl md:text-6xl 2xl:text-8xl text-white/90 right-8 -top-5 md:-top-8 2xl:-top-14 drop-shadow-xl">Team</h2>
@@ -66,9 +66,9 @@ export const Home = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <PhotoGrid/>
-            <div className="bg-zinc-900 mt-4 mb-6 md:mt-8 md:mb-12">
+            <section className="bg-zinc-900 mt-4 mb-6 md:mt-8 md:mb-12">
                 <Marquee className="text-white font-bold text-xl md:text-2xl 2xl:text-4xl tracking-wide h-16 md:h-20 2xl:h-28 space-x-4">
                     <p><span className="text-sky-600">Together</span> We Explore</p>
                     <p><span className="text-sky-600">Together</span> We Explore</p>
@@ -77,8 +77,8 @@ export const Home = () => {
                     <p><span className="text-sky-600">Together</span> We Explore</p>
                     <p><span className="text-sky-600">Together</span> We Explore</p>
                 </Marquee>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }
 
